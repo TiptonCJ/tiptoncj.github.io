@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🧠 Hand-Written Digit Classifier | Carter Tipton</title>
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
@@ -12,36 +17,94 @@
       line-height: 1.6;
       padding: 20px;
     }
-
     header {
       background: #4f46e5;
-      color: white;
-      padding: 30px;
+      color: #fff;
+      padding: 40px 20px;
       text-align: center;
       border-radius: 10px;
     }
-
     header h1 {
+      font-size: 2.5rem;
       margin-bottom: 10px;
-      font-size: 2rem;
     }
-
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      margin-top: 20px;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      align-items: center;
+    }
+    .menu > li {
+      position: relative;
+      display: inline-block;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background 0.2s;
+    }
+    .menu a:hover, .menu .dropdown:hover > a {
+      background: #6366f1;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #4f46e5;
+      min-width: 160px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 1;
+      border-radius: 0 0 8px 8px;
+      margin-top: 2px;
+    }
+    .dropdown-content li {
+      display: block;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px 16px;
+      display: block;
+      border-radius: 0;
+    }
+    .dropdown-content a:hover {
+      background: #6366f1;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
     section {
       margin-top: 40px;
     }
-
-    a {
+    h2 {
       color: #4f46e5;
-      font-weight: bold;
-      text-decoration: none;
+      margin-bottom: 10px;
     }
-
     p {
       margin: 10px 0;
     }
-
+    ul {
+      margin-left: 20px;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 90%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
     footer {
-      margin-top: 60px;
+      margin-top: 50px;
       text-align: center;
       color: #aaa;
       font-size: 0.9rem;
@@ -52,6 +115,21 @@
   <header>
     <h1>🧠 Hand-Written Digit Classifier</h1>
     <p>Built with Python, TensorFlow, and NumPy</p>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Projects &#9662;</a>
+          <ul class="dropdown-content">
+            <li><a href="MountainMayhem.html">Mountain Mayhem</a></li>
+            <li><a href="F1Predictor.html">F1 Race Predictor</a></li>
+            <li><a href="DigitClassifier.html">Hand-written Digit Classifier</a></li>
+            <li><a href="TableauDash.html">ADCC Data Dashboard</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section>
