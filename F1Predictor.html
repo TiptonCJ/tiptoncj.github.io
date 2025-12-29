@@ -102,6 +102,24 @@
       margin-top: 40px;
     }
 
+    .prediction-container {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .prediction-container img {
+      max-width: 35%;
+      flex-shrink: 0;
+    }
+
+    .results-text {
+      flex: 1;
+      min-width: 300px;
+      margin-left: 50px;
+    }
+
     h2 {
       color: #4f46e5;
       margin-bottom: 10px;
@@ -154,10 +172,40 @@
   </section>
 
   <section>
-    <h2>Upcoming Prediction</h2>
-    <p>Below is the model's prediction for the upcoming 2025 Austrian Grand Prix(June 27-29, 2025):</p>
-        <img src="images/F1/predict 25 11.png" alt="predict 25 11">
-
+    <h2>Prediction and Actual Results for the 2025 Austrian Grand Prix</h2>
+    <div class="prediction-container">
+      <img src="images/F1/predict 25 11.png" alt="predict 25 11">
+      <div class="results-text">
+        <p>Below is the model's prediction for the 2025 Austrian Grand Prix (June 27-29, 2025):</p>
+        <p><strong>Actual Race Results:</strong></p>
+        <ol>
+          <li>Lando Norris (McLaren)</li>
+          <li>Oscar Piastri (McLaren)</li>
+          <li>Charles Leclerc (Ferrari)</li>
+          <li>Lewis Hamilton (Ferrari)</li>
+          <li>George Russell (Mercedes)</li>
+          <li>Liam Lawson (Racing Bulls)</li>
+          <li>Fernando Alonso (Aston Martin)</li>
+          <li>Gabriel Bortoleto (Kick Sauber)</li>
+          <li>Nico Hülkenberg (Kick Sauber)</li>
+          <li>Esteban Ocon (Haas)</li>
+          <li>Oliver Bearman (Haas)</li>
+          <li>Isack Hadjar (Racing Bulls)</li>
+          <li>Pierre Gasly (Alpine)</li>
+          <li>Lance Stroll (Aston Martin)</li>
+          <li>Franco Colapinto (Alpine)</li>
+          <li>Yuki Tsunoda (Red Bull)</li>
+        </ol>
+        <p>Did Not Finish (DNF):</p>
+        <ul>
+          <li>Alexander Albon (Williams)</li>
+          <li>Max Verstappen (Red Bull)</li>
+          <li>Kimi Antonelli (Mercedes)</li>
+          <li>Carlos Sainz Jr. (Williams)</li>
+        </ul>
+        <p>The model's prediction was close in identifying McLaren dominance, but underestimated Norris's performance relative to Piastri. The actual podium matched the prediction's top three teams(when excluding the DNFs), though the order differed slightly.</p>
+      </div>
+    </div>
   </section>
 
   <footer>
