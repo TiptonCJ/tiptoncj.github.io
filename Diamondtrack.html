@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🎮 Mountain Mayhem | Carter Tipton</title>
+  <title>🏏 Diamondtrack | Carter Tipton</title>
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
-
     body {
       font-family: Arial, sans-serif;
       background-color: #f0f2f5;
@@ -18,7 +17,6 @@
       line-height: 1.6;
       padding: 20px;
     }
-
     header {
       background: #4f46e5;
       color: #fff;
@@ -26,20 +24,16 @@
       text-align: center;
       border-radius: 10px;
     }
-
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 1.2rem;
     }
-
     nav {
       margin-top: 20px;
     }
-
     .menu {
       list-style: none;
       padding: 0;
@@ -49,12 +43,10 @@
       gap: 30px;
       align-items: center;
     }
-
     .menu > li {
       position: relative;
       display: inline-block;
     }
-
     .menu a {
       color: white;
       text-decoration: none;
@@ -63,11 +55,9 @@
       border-radius: 5px;
       transition: background 0.2s;
     }
-
     .menu a:hover, .menu .dropdown:hover > a {
       background: #6366f1;
     }
-
     .dropdown-content {
       display: none;
       position: absolute;
@@ -78,43 +68,41 @@
       border-radius: 0 0 8px 8px;
       margin-top: 2px;
     }
-
     .dropdown-content li {
       display: block;
     }
-
     .dropdown-content a {
       color: white;
       padding: 10px 16px;
       display: block;
       border-radius: 0;
     }
-
     .dropdown-content a:hover {
       background: #6366f1;
     }
-
     .dropdown:hover .dropdown-content {
       display: block;
     }
-
     section {
       margin-top: 40px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
     }
-
     h2 {
       color: #4f46e5;
       margin-bottom: 10px;
     }
-
-    img {
-      display: block;
-      margin: 20px auto;
-      max-width: 90%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    p {
+      margin: 10px 0;
     }
-
+    ul {
+      margin-left: 20px;
+    }
     footer {
       margin-top: 50px;
       text-align: center;
@@ -125,8 +113,8 @@
 </head>
 <body>
   <header>
-    <h1>🎮 Mountain Mayhem</h1>
-    <p>A Java-based platformer built during my sophomore year</p>
+    <h1>🏏 Diamondtrack</h1>
+    <p>A live baseball stats tracking app similar to GameChanger, developed as my capstone project</p>
     <nav>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
@@ -140,7 +128,7 @@
             <li><a href="Diamondtrack.html">Diamondtrack</a></li>
           </ul>
         </li>
-        <li><a href="/about.html">About Me</a></li>
+        <li><a href="about.html">About Me</a></li>
       </ul>
     </nav>
   </header>
@@ -148,23 +136,35 @@
   <section>
     <h2>Project Overview</h2>
     <p>
-      Mountain Mayhem is a 2D game where you navigate through a rugged mountain range, avoiding obstacles and collecting coins.
-      It was developed entirely in Java and showcases my early work in object-oriented programming and basic game development.
+      Diamondtrack is a comprehensive live baseball stats tracking application developed as my capstone project. Inspired by platforms like GameChanger, 
+      it allows coaches, players, and fans to track real-time game statistics, manage team rosters, and analyze performance data.
     </p>
     <p>
-      Since then, I’ve greatly expanded my knowledge in both Java and game design. The current state of the project includes many updates and improvements, although it remains a work-in-progress.
+      Built with modern web technologies, Diamondtrack provides an intuitive interface for recording plays, viewing live scoreboards, and generating detailed reports.
     </p>
     <p>
-      👉 <a href="https://github.com/TiptonCJ/Mountain-Mayhem" target="_blank">View and Download on GitHub</a>
+      You can view and download the full codebase here:<br>
+      👉 <a href="https://github.com/TiptonCJ/Diamondtrack" target="_blank">GitHub Repository</a>
     </p>
   </section>
 
   <section>
-    <h2>Images Throughout Development</h2>
-    <p>Here are three snapshots showing the game's start screen, a coin pickup, and the win screen:</p>
-    <img src="images/MountainMayhem/1.png" alt="Mountain Mayhem Screenshot 1">
-    <img src="images/MountainMayhem/2.png" alt="Mountain Mayhem Screenshot 2">
-    <img src="images/MountainMayhem/3.png" alt="Mountain Mayhem Screenshot 3">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Real-time game tracking with live score updates</li>
+      <li>Player and team statistics management</li>
+      <li>Customizable dashboards for coaches and players</li>
+      <li>Data visualization for performance analysis</li>
+      <li>Mobile-responsive design for on-the-go access</li>
+      <li>Integration with common baseball scoring systems</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Technologies Used</h2>
+    <p>
+      Diamondtrack was built using HTML, CSS, JavaScript, and Node.js for the backend, with a focus on creating a scalable and user-friendly application.
+    </p>
   </section>
 
   <footer>
